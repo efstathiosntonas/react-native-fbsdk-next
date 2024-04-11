@@ -16,14 +16,14 @@ else
   mkdir -p TEMP/ios/RNFBSDKExample
   cp RNFBSDKExample/README.md TEMP/
   cp RNFBSDKExample/android/local.properties TEMP/android/ || true
-  cp RNFBSDKExample/App.js TEMP/
+  cp RNFBSDKExample/App.tsx TEMP/
 fi
 
 # Purge the old sample
 \rm -fr RNFBSDKExample
 
 # Make the new example
-npx react-native init RNFBSDKExample --skip-install
+npx react-native@latest init RNFBSDKExample --skip-install
 pushd RNFBSDKExample
 rm -f Gemfile Gemfile.lock .ruby-version
 yarn

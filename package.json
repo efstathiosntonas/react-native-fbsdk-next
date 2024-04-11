@@ -1,6 +1,6 @@
 {
   "name": "react-native-fbsdk-next",
-  "version": "12.1.4",
+  "version": "12.1.5",
   "description": "Facebook SDK support for React Native apps.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
@@ -137,17 +137,6 @@
     "bracketSameLine": true,
     "parser": "typescript"
   },
-  "@react-native-community/bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      [
-        "commonjs"
-      ],
-      "module",
-      "typescript"
-    ]
-  },
   "react-native": "src/index.ts",
   "react-native-builder-bob": {
     "source": "src",
@@ -161,5 +150,6 @@
   "eslintIgnore": [
     "node_modules/",
     "lib/"
-  ]
+  ],
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
